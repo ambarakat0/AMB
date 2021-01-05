@@ -1,0 +1,250 @@
+.header {
+    // background-image: linear-gradient(to right bottom, rgba(51, 96, 185, 0.8), rgba(24, 61, 135, 0.8)), url(../img/header-img-lg.jpg);
+    background-image: radial-gradient(rgba(44, 81, 155, 0.8), rgba(8, 37, 97, 0.8)), url(../img/header-img-sm.jpg);;
+    background-size: cover;
+    background-position: right;
+    padding: 4rem 6rem;
+    margin-bottom: 8rem;
+    grid-column: full-start/full-end;
+    
+    display: grid;
+    grid-template-rows: repeat(3, -webkit-max-content);
+    grid-template-rows: repeat(3, max-content);
+    grid-row-gap: 4rem;
+    align-content: center;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-image: radial-gradient(rgba(44, 81, 155, 0.8), rgba(8, 37, 97, 0.8)), url(../img/header-img-lg.jpg);;
+    }
+
+    @media (min-width: 125em) {
+        background-image: radial-gradient(rgba(44, 81, 155, 0.8), rgba(8, 37, 97, 0.8)), url(../img/header-img-hg.jpg);;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        padding: 2rem 3rem; 
+    }
+    
+    @media only screen and (max-width: 56.25em) {
+        margin-bottom: 6rem;
+    }
+    @media only screen and (max-width: 50em) {
+        margin-bottom: 5rem;  
+    }
+    @media only screen and (max-width: 41.875em) {
+        margin-bottom: 4rem;  
+    }
+    @media only screen and (max-width: 31.25em) {
+        margin-bottom: 3rem;  
+    }
+
+    &__social {
+        grid-row: 1/2;
+        &--animation {
+            -webkit-animation: fadeOut 1s 4s;
+                    animation: fadeOut 1s 4s; 
+            -webkit-animation-fill-mode: backwards; 
+                    animation-fill-mode: backwards;
+        }
+    }
+    
+    &__content {
+        padding: 4rem 8rem; 
+    }
+
+
+    &__text {
+        grid-row: 2/3;
+        // margin-bottom: auto;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+
+        &--main {
+            font-weight: 400;
+            font-size: 4rem;
+            color: var(--color-secondary);
+            -webkit-animation: moveToRight 1s cubic-bezier(0,.23,.93,.34) 1s;
+                    animation: moveToRight 1s cubic-bezier(0,.23,.93,.34) 1s;
+            -webkit-animation-fill-mode: backwards;
+                    animation-fill-mode: backwards;
+        }
+
+        &--sub {
+            font-weight: 300;
+            font-size: 2rem;
+            color: var(--color-grey-light-1);
+            
+            &-1{
+                -webkit-animation: moveToRight 1s cubic-bezier(0,.23,.93,.34);
+                        animation: moveToRight 1s cubic-bezier(0,.23,.93,.34);
+            }
+            &-2{
+                -webkit-animation: moveToRight 1s cubic-bezier(0,.23,.93,.34) 2s;
+                        animation: moveToRight 1s cubic-bezier(0,.23,.93,.34) 2s;
+                -webkit-animation-fill-mode: backwards;
+                        animation-fill-mode: backwards;
+            }
+        }
+    } 
+
+    &__contact {
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: repeat(3, -webkit-max-content);
+        grid-template-columns: repeat(3, max-content);  
+        justify-items: center;
+        grid-column-gap: 4rem;
+
+        -webkit-animation: fadeOut 1s 4.5s;
+
+                animation: fadeOut 1s 4.5s; 
+        -webkit-animation-fill-mode: backwards; 
+                animation-fill-mode: backwards;
+
+        &--label {
+            font-size: 1.5rem; 
+            color: var(--color-grey-light-1);
+            font-style: italic;
+            @media only screen and (max-width: 25em) {
+                font-size: 1.3rem; 
+            }
+        }
+
+        &--detail {
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: var(--color-grey-light-1);
+            @media only screen and (max-width: 25em) {
+                font-size: 1.1rem; 
+            }
+        }
+
+        @media only screen and (max-width: 25em) {
+            grid-column-gap: 2rem;
+        }
+    }
+
+}
+
+.btn {
+    color: #fff; 
+    border: none;
+    border-radius: 0;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+    transition: all .2s;
+    outline: none;
+
+    &--yellow{
+        background-color: var(--color-secondary-dark); 
+    }
+
+    &--blue {
+        background-color: var(--color-blue-light); 
+    }
+
+    &--animation {
+        -webkit-animation: moveToTop 1s cubic-bezier(0,.23,.93,.34) 3s;
+                animation: moveToTop 1s cubic-bezier(0,.23,.93,.34) 3s; 
+        -webkit-animation-fill-mode: backwards; 
+                animation-fill-mode: backwards;
+    }
+   
+    &:hover {
+        background-color: var(--color-blue-dark); 
+    }
+
+    @media only screen and (max-width: 28.125em) {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+// Animation
+
+@-webkit-keyframes moveToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-30rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-30rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes moveToTop {
+    0% {
+        opacity: 0;
+        transform: translateY(15rem);
+    }
+    80% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveToTop {
+    0% {
+        opacity: 0;
+        transform: translateY(15rem);
+    }
+    80% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 0;
+    
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}

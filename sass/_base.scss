@@ -1,0 +1,124 @@
+:root {
+    --color-primary: #c69963;
+    --color-primary-dark: #b28451;
+
+    // --color-secondary-light: #2998ff;
+    // --color-secondary-dark: #5643fa;
+
+    --color-blue-dark: #1a3263;
+    --color-blue-light: #183d87;
+    
+    --color-secondary: #ffbf27;
+    --color-secondary-dark: #fcb305; 
+
+    --color-red : rgb(255, 25, 25);
+
+    --color-grey-dark: #777;
+    --color-grey-dark-2: #999;
+    --color-grey-dark-3: #333;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-grey-light-1: #f7f7f7;
+    --color-grey-light-2: #eee;
+
+    --color-grey-dark-1: #54483a;
+    --color-grey-dark-2: #6d5d4b;
+
+    // FONT VARIABLES
+    // font-family: "Lato", sans-serif;
+    --font-primary: "Nunito", sans-serif;
+    --font-display: "Josefin Sans", sans-serif; 
+
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+    --bp-tiny: 31.25em;
+    --bp-smallest: 28.125em;
+}
+
+$color-blue-light: rgb(51, 96, 185);
+$color-blue-dark: rgb(24, 61, 135);
+
+$color-orange-light: rgb(255, 191, 39);
+$color-orange-dark: rgb(252, 179, 5);
+
+.mb-sm {margin-bottom: 2rem;}
+.mb-md {margin-bottom: 3rem;}
+.mb-lg {margin-bottom: 4rem;}
+.mb-hg {margin-bottom: 8rem;}
+
+$bp-largest: 75em;   //1200px
+$bp-large: 62.5em;   //1000px
+$bp-medium: 56.25em; //900px
+$bp-mediumV2 : 50em; //800px
+$bp-small: 41.875em; //670px
+$bp-tiny: 31.25em;   //500px
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-largest){
+        font-size: 50%;
+    }
+}
+ 
+body {
+    font-family: "Lato", sans-serif;
+    // font-family: var(--font-primary);
+    color: var(--color-grey-dark-2);
+    font-weight: 300;
+    line-height: 1.6; 
+    // overscroll-behavior-y: none;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid; 
+    grid-template-rows:  100vh repeat(6, min-content);
+    grid-template-columns: [sidebar-start] 10rem [sidebar-end full-start] minmax(6rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end];
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-rows: 10rem 100vh repeat(6, min-content);
+        grid-template-columns: [full-start]  minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: 31.25em) {
+        grid-template-rows: 10rem 80vh repeat(6, min-content);
+        grid-template-columns: [full-start]  minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+    }
+}
+
+// ------------------ Global effect ------------------
+
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}
+
+.reveal {
+    transition: all 1s;
+}
+
+.lazy-img {
+    filter: blur(20px);
+}
+
+.bigger-img {
+    transform: scale(1.15);
+}
+
+::selection {
+    background-color: var(--color-blue-light);
+    color: var(--color-white);
+}

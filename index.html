@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/me-happy-1x.png">
+    <script defer src="script.js"></script>
+    <title>Ambarakat</title>
+</head>
+
+<body class="container">
+
+    <div class="sidebar">
+
+        <ul class="nav">
+            <li>
+                <img srcset="img/me-happy-1x.png 1x, img/me-happy-2x.png 2x" alt="logo me" class="logo"
+                    src="img/me-happy-2x.png">
+            </li>
+            <li class="nav__item "><a href="#header" class="nav__link">
+                    <svg class="nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-home3"></use>
+                    </svg>
+                </a></li>
+
+            <li class="nav__item"><a href="#about-me" class="nav__link">
+                    <svg class="nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                </a></li>
+
+            <li class="nav__item"><a href="#services" class="nav__link">
+                    <svg class="nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-fire"></use>
+                    </svg>
+                </a></li>
+
+            <li class="nav__item"><a href="#mywork" class="nav__link">
+                    <svg class="nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-folder-open"></use>
+                    </svg>
+                </a></li>
+
+            <li class="nav__item"><a href="#contact" class="nav__link">
+                    <svg class="nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-bubble"></use>
+                    </svg>
+                </a></li>
+        </ul>
+
+
+    </div>
+
+    <header class="header section" id="header" data-rows="1" data-rowe="2">
+
+        <div class="header__social header__social--header header__social--animation">
+            <svg class="icon icon__social icon__social--header icon__social--facebook">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <g>
+                    <a xlink:href="https://www.facebook.com/Ambarakt"></a>
+                </g>
+            </svg>
+            <svg class="icon icon__social icon__social--header icon__social--twitter">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+            <svg class="icon icon__social icon__social--header icon__social--instagram">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+            <svg class="icon icon__social icon__social--header icon__social--github">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+        </div>
+        <div class="header__text">
+            <h3 class="header__text--sub header__text--sub-1">Hi There,</h3>
+            <h1 class="header__text--main">I Am a Developer</h1>
+            <h3 class="header__text--sub header__text--sub-2 mb-sm">Welcome to my Portfolio Website.</h3>
+            <button class=" btn btn--yellow header__btn btn--animation">
+                <svg class="icon icon__btn">
+                    <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>
+                <span>More about me</span>
+            </button>
+        </div>
+
+        <div class="header__contact">
+            <div>
+                <h4 class="header__contact--label"><strong>Email</strong></h4>
+                <p class="header__contact--detail">Ambarakat@gmail.com</p>
+            </div>
+
+            <div>
+                <h4 class="header__contact--label"><strong>Phone</strong></h4>
+                <p class="header__contact--detail">(+25)01201509757</p>
+            </div>
+
+            <div>
+                <h4 class="header__contact--label"><strong>Location</strong></h4>
+                <p class="header__contact--detail">Alexandria, Egypt</p>
+            </div>
+        </div>
+
+
+        <!-- <img class="header__img" src="img/header-img-lg.png" alt="header image"> -->
+    </header>
+
+    <section class="about-me reveal section" id="about-me" data-rows="2" data-rowe="3">
+        <div class="about-me__heading">
+            <!-- <img src="img/circle.png" alt="circle" class="about-me__circle"> -->
+            <h2 class="about-me__heading--main">About Me</h2>
+            <p class="about-me__heading--sub">Main informations About me and what i love to do</p>
+        </div>
+
+        <div class="about-me__my-photo">
+
+            <img srcset="img/myphoto-lg.jpg 600w, img/myphoto-sm.png 300w"
+                sizes="(max-width: 1200px) 6vw,(max-width: 900px) 5.625vw" alt="My photo"
+                class="about-me__my-photo--img" src="img/myphoto-lg.jpg">
+
+            <!-- <figure>
+                <img src="img/My photo-sm.png" data-src="img/My photo.jpg" alt="My photo"
+                    class="about-me__my-photo--img lazy-img">
+            </figure> -->
+
+        </div>
+
+        <div class="about-me__content">
+            <h3 class="about-me__content--main ">Hello, I'm Ambarakat</h3>
+            <p class="about-me__content--sub mb-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus ipsam adipisci
+                accusantium hic,
+                obcaecati minus voluptatem quam non quod, pariatur vero explicabo corrupti laudantium nam, sequi illum
+                debitis excepturi at!
+            </p>
+            <div class="about-me__details mb-sm ">
+                <div class="about-me__details--item">
+                    <h4 class="about-me__details--main">Name:</h4>
+                    <p class="about-me__details--sub">Ambarakat</p>
+                </div>
+                <div class=" about-me__details--item">
+                    <h4 class="about-me__details--main">Date of birth:</h4>
+                    <p class="about-me__details--sub">12-09-1998</p>
+                </div>
+                <div class=" about-me__details--item">
+                    <h4 class="about-me__details--main">Nationality:</h4>
+                    <p class="about-me__details--sub">Egypt</p>
+                </div>
+                <div class=" about-me__details--item">
+                    <h4 class="about-me__details--main">Work Status:</h4>
+                    <p class="about-me__details--sub">Full stake web developer</p>
+                </div>
+                <div class=" about-me__details--item">
+                    <h4 class="about-me__details--main">Phone:</h4>
+                    <p class="about-me__details--sub">(+25)01201509757</p>
+                </div>
+                <div class=" about-me__details--item">
+                    <h4 class="about-me__details--main">Email:</h4>
+                    <p class="about-me__details--sub">Ambarakat@gmail.com</p>
+                </div>
+                <div class=" about-me__details--item">
+                    <h4 class="about-me__details--main">Address:</h4>
+                    <p class="about-me__details--sub">Alexandria, Egypt</p>
+                </div>
+                <div class=" about-me__details--item">
+                    <h4 class="about-me__details--main">Freelancer:</h4>
+                    <p class="about-me__details--sub"> Available</p>
+                </div>
+            </div>
+            <button class=" btn btn--yellow about-me__btn">
+                <svg class="icon icon__btn">
+                    <use xlink:href="img/sprite.svg#icon-cloud-download"></use>
+                </svg>
+                <span>Download My CV</span>
+            </button>
+        </div>
+
+        <div class="about-me__features">
+            <div class="about-me__feature">
+                <svg class="icon icon__feature">
+                    <use xlink:href="img/sprite.svg#icon-stack"></use>
+                </svg>
+                <span>completed<br>Projects</span>
+            </div>
+            <div class="about-me__feature">
+                <svg class="icon icon__feature">
+                    <use xlink:href="img/sprite.svg#icon-mug"></use>
+                </svg>
+                <span>250 cups of<br>coffee</span>
+            </div>
+            <div class="about-me__feature">
+                <svg class="icon icon__feature">
+                    <use xlink:href="img/sprite.svg#icon-smile2"></use>
+                </svg>
+                <span>Satisfied<br>Client</span>
+            </div>
+            <div class="about-me__feature">
+                <svg class="icon icon__feature">
+                    <use xlink:href="img/sprite.svg#icon-embed2"></use>
+                </svg>
+                <span>Web development<br> experience</span>
+            </div>
+            <div class="about-me__feature">
+                <svg class="icon icon__feature">
+                    <use xlink:href="img/sprite.svg#icon-cog"></use>
+                </svg>
+                <span>Quality work<br>provided</span>
+            </div>
+            <div class="about-me__feature">
+                <svg class="icon icon__feature">
+                    <use xlink:href="img/sprite.svg#icon-stopwatch"></use>
+                </svg>
+                <span>In time project<br>delivery</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="services reveal section" id="services" data-rows="3" data-rowe="4">
+        <div class="services__text">
+            <h2 class="services__text--main">My Services</h2>
+            <p class="services__text--sub">I have worked with a number of clients</p>
+        </div>
+
+        <div class="service">
+            <span class="service__number mb-sm">01</span>
+            <h3 class="service__title mb-sm">Web Developer</h3>
+            <p class="service__content">Already developed websites are being maintained with the best problem solving
+                approach.</p>
+        </div>
+        <div class="service">
+            <span class="service__number mb-sm">02</span>
+            <h3 class="service__title mb-sm">Web Designer</h3>
+            <p class="service__content">Nice and elegent design, fully customized website at a single place.</p>
+        </div>
+        <div class="service">
+            <span class="service__number mb-sm">03</span>
+            <h3 class="service__title mb-sm">Graphic Designer</h3>
+            <p class="service__content">I can create InfoGraphics Brochure, Poster, Catalog, Social Media Posts, UI/UX
+                designs etc.</p>
+        </div>
+        <div class="service">
+            <span class="service__number mb-sm">04</span>
+            <h3 class="service__title mb-sm">Video Editor</h3>
+            <p class="service__content">video editor, video mixer, motion graphics designer and videographer, from
+                concept to playout and in all forms and styles of video</p>
+        </div>
+        <div class="service">
+            <span class="service__number mb-sm">05</span>
+            <h3 class="service__title mb-sm">Digital Marketing</h3>
+            <p class="service__content">Enhance your business by the help of digital medium and reach to large number of
+                people</p>
+        </div>
+        <div class="service">
+            <span class="service__number mb-sm">06</span>
+            <h3 class="service__title mb-sm">Branding</h3>
+            <p class="service__content">Make your company a Brand which includes Logo, Business cards, Banners, Letter
+                Head, Envlope etc.
+            </p>
+        </div>
+    </section>
+
+    <section class="testimonials reveal section" data-rows="4" data-rowe="5">
+        <div class="testimonials__heading">
+            <h2 class="testimonials__main">Happy clients</h2>
+            <h5 class="testimonials__sub">We make people genuinely happy </h5>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial__progress-bar"></div>
+            <blockquote class="testimonial__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iure voluptates, recusandae, vel omnis aut
+                explicabo ex corporis odio quod fuga maxime, obcaecati ipsum sed eveniet quo officia voluptate rerum.
+            </blockquote>
+            <address class="testimonial__details">
+                <img src="img/user-1.jpg" alt="user 1" class="testimonial__details--photo">
+                <div class="testimonial__details--identity">
+                    <h6 class="testimonial__details--name">Mark Smith</h6>
+                    <p class="testimonial__details--role">Marketing</p>
+                </div>
+            </address>
+        </div>
+    </section>
+
+    <section class="work reveal section" id="mywork" data-rows="5" data-rowe="6">
+        <!-------------------- gallery elemnts ------------------->
+
+        <div class="work__text">
+            <h2 class="work__heading">My Works</h2>
+            <h5 class="work__sub">A latest creative works in web development and design</h5>
+            <p class="work__sub">Click on the img to see the whole project</p>
+        </div>
+        <!-- <img srcset="img/myphoto-lg.jpg 600w, img/myphoto-sm.png 300w"
+                sizes="(max-width: 1200px) 6vw,(max-width: 900px) 5.625vw" alt="My photo"
+                class="about-me__my-photo--img" src="img/myphoto-lg.jpg"> -->
+        <!-- src="img/My photo-sm.png" data-src="img/My photo.jpg" -->
+        <figure class="work__item work__item--1">
+            <img srcset="img/project-1-largest.png 1200w, img/project-1-large.png 900w, img/project-1-md.png 600w, img/project-1-sm.png 400w"
+                sizes="(max-width: 75em) 41.66vw, (max-width: 56.25em) 47.77vw, (max-width: 37.5em) 43.33vw, (max-width: 25em) 50vw"
+                src="img/project-1-largest.png" alt="project 1" class="work__img ">
+        </figure>
+
+        <figure class="work__item work__item--2">
+            <img srcset="img/project-2-lg.png 800w, img/project-2-md.png 600w, img/project-2-sm.png 400w"
+                sizes="(max-width:75em) 30.83vw, (max-width:50em) 35vw, (max-width:37.5em) 33.33vw, "
+                src="img/project-2-lg.png" alt="project 2" class="work__img ">
+        </figure>
+        <figure class="work__item work__item--3">
+            <img srcset="img/project-3-lg.png 600w, img/project-3-md.png 400w, img/project-3-sm.png 300w"
+                sizes="(max-width:75em) 20vw, (max-width:50em) 22.5vw, (max-width:37.5em) 20.8vw, "
+                src="img/project-3-lg.png" alt="project 3" class="work__img ">
+        </figure>
+        <figure class="work__item work__item--4">
+            <img srcset="img/project-4-lg.png 1349w, img/project-4-md.png 800w, img/project-4-sm.png 600w"
+                sizes="(max-width:75em) 41.66vw, (max-width:50em) 50vw, (max-width:37.5em) 50vw, "
+                src="img/project-4-lg.png" alt="project 4" class="work__img ">
+        </figure>
+        <figure class="work__item work__item--5">
+            <img srcset="img/project-5-lg.png 800w, img/project-5-md.png 600w, img/project-5-sm.png 400w"
+                sizes="(max-width:75em) 30.83vw, (max-width:50em) 35vw, (max-width:37.5em) 33.333vw, "
+                src="img/project-5-lg.png" alt="project 5" class="work__img ">
+        </figure>
+        <figure class="work__item work__item--6">
+            <img srcset="img/project-6-lg.png 800w, img/project-6-md.png 600w, img/project-6-sm.png 400w"
+                sizes="(max-width:75em) 30.83vw, (max-width:50em) 37.5vw, (max-width:37.5em) 33.333vw, "
+                src="img/project-6-lg.png" alt="project 6" class="work__img ">
+        </figure>
+        <figure class="work__item work__item--7">
+            <img srcset="img/project-7-lg.png 1100w, img/project-7-md.png 800w, img/project-7-sm.png 600w"
+                sizes="(max-width:75em) 41.66vw, (max-width:50em) 50vw, (max-width:37.5em) 43.333vw, "
+                src="img/project-7-lg.png" alt="project 7" class="work__img ">
+        </figure>
+        <figure class="work__item work__item--8">
+            <img srcset="img/project-8-lg.png 600w, img/project-8-md.png 400w, img/project-8-sm.png 300w"
+                sizes="(max-width:75em) 18.33vw, (max-width:50em) 20vw, (max-width:37.5em) 16.66vw, "
+                src="img/project-8-lg.png" alt="project 8" class="work__img ">
+        </figure>
+
+        <!-------------------- Slider elemnts ------------------->
+        <!-- <div class="work__text">
+            <h2 class="work__heading">My Works</h2>
+            <h5 class="work__sub">A latest creative works in web development and design</h5>
+        </div>
+
+        <div class="slider">
+            <img src="img/project-1.png" alt="project 1" class="slide__project">
+            <img src="img/project-2.png" alt="project 2" class="slide__project">
+            <img src="img/project-3.png" alt="project 3" class="slide__project">
+            <img src="img/project-4.png" alt="project 4" class="slide__project">
+            <img src="img/project-5.png" alt="project 5" class="slide__project">
+            <img src="img/project-6.png" alt="project 6" class="slide__project">
+        </div>
+        <svg class="icon changing-btn changing-btn--left">
+            <use xlink:href="img/sprite.svg#icon-circle-left"></use>
+        </svg>
+        <svg class="icon changing-btn changing-btn--right">
+            <use xlink:href="img/sprite.svg#icon-circle-right"></use>
+        </svg>
+
+        <div class="dots"></div>
+
+        <button class="btn btn--yellow cta">
+            <svg class="icon icon__btn">
+                <use xlink:href="img/sprite.svg#icon-eye"></use>
+            </svg>
+            <span>See more projects!</span>
+        </button> -->
+    </section>
+
+    <section class="contact reveal section" id="contact" data-rows="6" data-rowe="7">
+        <div class="contact__heading">
+            <h2 class="contact__heading--main">Get in touch</h2>
+            <h5 class="contact__heading--sub">Feel free to contact me any time</h5>
+        </div>
+
+        <form action="#" class="contact__form">
+            <h3 class="contact__form--heading">Just say hey!</h3>
+            <div class="contact__form--content">
+                <input class="contact__form--input" placeholder="Full name" type="text" id="name" autocomplete="off"
+                    required>
+                <label for="name" class="contact__form--label">Full name</label>
+            </div>
+            <div class="contact__form--content">
+                <input class="contact__form--input" placeholder="Email" type="email" id="email" autocomplete="off"
+                    required>
+                <label for="email" class="contact__form--label">Email</label>
+            </div>
+            <div class="contact__form--text-container">
+                <textarea class="contact__form--text" name="" id="" cols="40" rows="5"></textarea>
+            </div>
+            <button class="btn btn--blue cta">
+                <svg class="icon icon__btn">
+                    <use xlink:href="img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span>Send your message</span>
+            </button>
+        </form>
+
+        <div class="contact__rate-me">
+            <h3 class="contact__rate-me__heading">Rate me please,</h3>
+            <img srcset="img/me-happy-1x.png 1x, img/me-happy-2x.png 2x" alt="happy" class="contact__rate-me__img"
+                data-img="1" src="img/me-happy-2x.png">
+            <h4 class="contact__rate-me__text" data-text="1">110</h4>
+            <img srcset="img/me-sad-1x.png 1x, img/me-sad-2x.png 2x" alt="sad" class="contact__rate-me__img"
+                data-img="2" src="img/me-sad-2x.png">
+            <h4 class="contact__rate-me__text" data-text="2">25</h4>
+            <img srcset="img/me-thinking-1x.png 1x, img/me-thinking-2x.png 2x" alt="thinking"
+                class="contact__rate-me__img" data-img="3" src="img/me-thinking-2x.png">
+            <h4 class="contact__rate-me__text" data-text="3">34</h4>
+        </div>
+
+        <div class="contact__contact-me">
+            <div class="contact__contact-me__phone">
+                <svg class="icon icon__form">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+                <h5 class="contact__contact-me__text">(+25)01201509757</h5>
+            </div>
+            <div class="contact__contact-me__email">
+                <svg class="icon icon__form">
+                    <use xlink:href="img/sprite.svg#icon-mail4"></use>
+                </svg>
+                <h5 class="contact__contact-me__text">ambarakat@gmail.com</h5>
+            </div>
+
+            <div class="contact__social contact__contact-me__social">
+                <svg class="icon icon__social icon__social--form icon__social--facebook">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+                <svg class="icon icon__social icon__social--form icon__social--twitter">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+                <svg class="icon icon__social icon__social--form icon__social--instagram">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+                <svg class="icon icon__social icon__social--form icon__social--github">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Art direction -->
+        <!-- <picture class="footer__img">
+            <source srcset="img/me-sad-1x.png 1x, img/me-sad-2x.png 2x" alt="logo" media="(max-width: 37.5em)">
+            <img srcset="img/me-happy-1x.png 1x, img/me-happy-2x.png 2x" alt="logo">
+        </picture> -->
+
+        <img srcset="img/me-happy-1x.png 1x, img/me-happy-2x.png 2x" alt="logo" class="footer__img"
+            src="img/me-happy-2x.png">
+        <ul class="footer__nav">
+            <li class="footer__nav__item"><a href="" class="footer__nav__link">about me</a></li>
+            <li class="footer__nav__item"><a href="" class="footer__nav__link">services</a></li>
+            <li class="footer__nav__item"><a href="" class="footer__nav__link">happy clients</a></li>
+            <li class="footer__nav__item"><a href="" class="footer__nav__link">projects</a></li>
+            <li class="footer__nav__item"><a href="" class="footer__nav__link">get in touch</a></li>
+        </ul>
+        <p class="footer__copyright">Copyright &copy; by Ambarakat</p>
+    </footer>
+
+</body>
+
+</html>

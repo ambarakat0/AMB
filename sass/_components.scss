@@ -1,0 +1,53 @@
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+
+    &__form {
+        fill: var(--color-blue-light);
+        margin-right: 1rem;
+    }
+
+    &__social {
+
+        &--form {
+            fill: var(--color-blue-light);
+        }
+
+        &--header {
+            fill: var(--color-secondary);
+        }
+        
+        
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        cursor: pointer;
+        transition: all .2s; 
+
+        &--facebook:hover {
+            fill: #3b5998;
+        }
+        &--twitter:hover {
+            fill: #00acee;
+        }
+        &--instagram:hover {
+            fill: #833ab4; 
+        }
+        &--github:hover {
+            fill: #211F1F;
+        }
+    }
+
+    &__btn {
+        fill: #fff;
+        margin-right: .5rem;
+        // transform: translateY(-2.5px);
+    }
+
+    &__feature {
+        fill: #fff;
+        margin-bottom: .7rem;
+    }
+
+}
